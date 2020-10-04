@@ -35,6 +35,8 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.thoughtworks.xstream/xstream -->
+
     </dependencies>
 
     <build>
@@ -45,7 +47,7 @@
                 <version>3.3.0</version>
                 <configuration>
                     <warName>bookstore</warName>
-<!--                    <outputDirectory>D:\Downloads\wildfly-21.0.0.Beta1\standalone\deployments</outputDirectory>-->
+                    <outputDirectory>D:\Downloads\wildfly-21.0.0.Beta1\standalone\deployments</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>

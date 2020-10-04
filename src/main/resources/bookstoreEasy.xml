@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <book >
+        <title>Everyday Italian</title>
+    </book>
+    <book >
+        <title>Everyday Italian 2</title>
+    </book>
+    <book >
+        <title>Everyday Italian 3</title>
+    </book>
+</bookstore>
