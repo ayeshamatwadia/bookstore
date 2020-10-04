@@ -16,7 +16,7 @@ public class StartupBookReader implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        System.out.println("On start web app");
+        System.out.println(">>>>>>>>>>>>>>>>>> APPLICATION IS RUNNING INITIALIZATIONS");
         readBookXml();
     }
 
@@ -27,8 +27,9 @@ public class StartupBookReader implements ServletContextListener {
             JAXBContext jaxbContext = JAXBContext.newInstance(Bookstore.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             Bookstore bookstore= (Bookstore) jaxbUnmarshaller.unmarshal(is);
-            System.out.println("____________ first book is"+ bookstore.getBooks().get(0).getCategory());
+            System.out.println("____________ first book is"+ bookstore.toString());
         } catch (JAXBException e) {
+            System.out.println(">>>>>>>>>>>>>>>>> FAILED TO BOOKSTORE XML FILE");
             e.printStackTrace();
         }
     }
