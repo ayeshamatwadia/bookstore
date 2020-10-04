@@ -20,12 +20,12 @@ public class Book {
 
     @XmlElement(name = "author")
     @XmlElementWrapper(name="authors")
-    private List<Author> authorList = new ArrayList<Author>();
+    private List<String> authorList = new ArrayList<>();
 
     public Book() {
     }
 
-    public Book(String category, String title, int year, double price, List<Author> authorList) {
+    public Book(String category, String title, int year, double price, List<String> authorList) {
         this.category = category;
         this.title = title;
         this.year = year;
@@ -66,11 +66,11 @@ public class Book {
         this.price = price;
     }
 
-    public List<Author> getAuthorList() {
+    public List<String> getAuthorList() {
         return authorList;
     }
 
-    public void setAuthorList(List<Author> authorList) {
+    public void setAuthorList(List<String> authorList) {
         this.authorList = authorList;
     }
 
