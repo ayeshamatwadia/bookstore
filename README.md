@@ -17,3 +17,7 @@ alternatively uncomment the
 line in your pom.xml and update the path to your local wildlfy instance
 
 mvn package will package the jar and copy it to the deployments folder
+
+Access the app here:
+
+http://localhost:8080/bookstore/
